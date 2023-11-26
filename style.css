@@ -16,7 +16,7 @@
     color:#b4bcbc;
 }
 
-/* ====clearing styles==== */
+/* ====Clearing styles==== */
 
 *{
     font-family: "Roboto", "Arial";
@@ -30,7 +30,21 @@ html, body{
     height: 100%;
 }
 
-/* ====navigation==== */
+/* ====Sections==== */
+
+#introduction
+{
+    padding-top: 25vh;
+    padding-left: 21vh;
+}
+
+#info
+{
+    margin-top: 50vh;
+    padding-left: 21vh;
+}
+
+/* ====Navigation==== */
 
 .navbar{
     width: 100%;
@@ -39,21 +53,28 @@ html, body{
     flex-direction: row;
     text-align: center;
     align-items: center;
+    z-index: 100;
     gap: 10px;
 }
 
-.nav-first, .nav-second, .nav-third
+.nav-first, .nav-second, .nav-third, .nav-space
 {
-    flex:.5;
+    flex:.3;
     padding: 1em;
     color: rgb(95, 108, 170);
 }
 
 .nav-title
 {
-    flex: 2;
+    flex: 1;
     padding: 1em;
     color: #42508b;
+}
+
+.nav-title > p
+{
+    font-weight: bolder;
+    font-size: 1.5em;
 }
 
 .nav-buy-button
@@ -70,4 +91,107 @@ html, body{
     color: white;
     border: 0;
     border-radius: 3px;
+}
+
+/* ====Introduction==== */
+.introduction-grid
+{
+    display: grid;
+    grid-template-columns: 24vw;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    gap:20px;
+}
+
+.introduction-title
+{
+    display: flex;
+    align-items: center;
+}
+
+.introduction-title > h1
+{
+    width: 100%;
+    font-size: 36px;
+    font-weight: bold;
+    color: #20284c;
+}
+
+.introduction-description
+{
+    color: rgb(58, 83, 165);
+}
+
+.introduction-buttons
+{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+}
+
+.introduction-pucharse-ui-button, .introduction-learn-more-button
+{
+    width: 160px;
+    height: 2.4em;
+}
+
+/* ====Info==== */
+
+.info-grid
+{
+    display: grid;
+    grid-template-columns: 24vw 1fr;
+    grid-template-rows: 0.2fr 1fr 0.5fr;
+    gap:20px;
+}
+
+.info-title
+{
+    display: flex;
+    align-items: center;
+}
+
+.info-title > h2
+{
+    width: 100%;
+    font-size: 26px;
+    font-weight: bold;
+    color: #20284c;
+}
+
+.info-description
+{
+    color: rgb(65, 85, 150);
+}
+
+.info-cards
+{
+    display: flex;
+    justify-content: start;
+    gap: 20px;
+    grid-row: -4 / span 3;
+}
+
+.card-image > img
+{
+    width: 600px;
+    height: 400px;
+}
+
+/* ====buttons==== */
+.dark-button
+{
+    background-color: #20284c;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    font-weight:300;
+}
+
+.light-button
+{
+    background-color: white;
+    color: #20284c;
+    border: 2px solid #20284c;
+    border-radius: 3px;
+    font-weight: bold;
 }
