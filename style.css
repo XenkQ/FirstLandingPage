@@ -16,7 +16,7 @@
     color:#b4bcbc;
 }
 
-/* ====Clearing styles==== */
+/* =============Clearing styles============= */
 
 *{
     font-family: "Roboto", "Arial";
@@ -30,7 +30,7 @@ html, body{
     height: 100%;
 }
 
-/* ====Sections==== */
+/* =============Sections============= */
 
 #introduction
 {
@@ -44,7 +44,7 @@ html, body{
     padding-left: 21vh;
 }
 
-/* ====Navigation==== */
+/* =============Navigation============= */
 
 .navbar{
     width: 100%;
@@ -87,13 +87,9 @@ html, body{
 {
     width: 200px;
     height: 2rem;
-    background-color: #20284c;
-    color: white;
-    border: 0;
-    border-radius: 3px;
 }
 
-/* ====Introduction==== */
+/* =============Introduction============= */
 .introduction-grid
 {
     display: grid;
@@ -111,7 +107,7 @@ html, body{
 .introduction-title > h1
 {
     width: 100%;
-    font-size: 36px;
+    font-size: 42px;
     font-weight: bold;
     color: #20284c;
 }
@@ -134,50 +130,110 @@ html, body{
     height: 2.4em;
 }
 
-/* ====Info==== */
+/* =============Info============= */
 
-.info-grid
+/* ===Top Info Card=== */
+.top-info-card
 {
     display: grid;
-    grid-template-columns: 24vw 1fr;
-    grid-template-rows: 0.2fr 1fr 0.5fr;
-    gap:20px;
+    grid-template-columns: 35vw 40vw;
+    grid-template-rows: 0.2fr 0.5fr 1fr;
 }
 
-.info-title
+.top-info-card-title
 {
     display: flex;
     align-items: center;
 }
 
-.info-title > h2
+.top-info-card-title > h2
 {
     width: 100%;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: bold;
     color: #20284c;
 }
 
-.info-description
+.top-info-card-description
 {
     color: rgb(65, 85, 150);
 }
 
-.info-cards
+.top-info-inner-cards
 {
     display: flex;
     justify-content: start;
     gap: 20px;
-    grid-row: -4 / span 3;
 }
 
-.card-image > img
+.inner-card
 {
-    width: 600px;
-    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* ====buttons==== */
+.inner-card > .cards-icons
+{
+    width: 40px;
+    height: 40px;
+}
+
+.top-info-card-image
+{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    grid-area: 1 / 2 / span 3 / 2;
+    margin-bottom: 20vh;
+}
+
+.top-info-card-image > img
+{
+    width: 100%;
+}
+
+.info-card-content > h2
+{
+    width: 100%;
+    font-size: 32px;
+    font-weight: bold;
+    color: #20284c;
+}
+
+/* ===Info Card=== */
+.info-card
+{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    gap: 20vh;
+    margin-bottom: 20vh;
+}
+
+.info-card-image > img
+{
+    height: 300px;
+    flex:1;
+}
+
+.info-card-content
+{
+    flex:0.5;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card-content > button
+{
+    margin-top: 20px;
+    width: 160px;
+    height: 2.4em;
+}
+
+
+/* =============buttons============= */
 .dark-button
 {
     background-color: #20284c;
