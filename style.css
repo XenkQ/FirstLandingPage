@@ -50,6 +50,11 @@ footer
     background-color: rgba(164, 171, 206, 0.445);
 }
 
+#price
+{
+    background-color: #f3f4f5;
+}
+
 /* =============Navigation============= */
 
 .navbar{
@@ -229,8 +234,13 @@ footer
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #f3f4f5;
     padding-bottom: 20vh;
+}
+
+.price-wave
+{
+    background-color: white;
+    z-index: 10px;
 }
 
 .price-header{
