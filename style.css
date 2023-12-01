@@ -35,37 +35,43 @@ html, body{
 #introduction
 {
     padding-top: 25vh;
-    padding-left: 21vh;
+    padding-left: 10vw;
+    padding-bottom: 60vh;
+    background-image: url("./Img/Img5.jpg");
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+    background-size: 60%;
 }
 
 #info
 {
-    margin-top: 50vh;
-    padding-left: 21vh;
+    padding-left: 10vw;
+    padding-right: 10vw;
 }
 
 footer
 {
-    padding: 10vh 20vw 5vh 20vw;
     background-color: rgba(164, 171, 206, 0.445);
+    width: 100%;
 }
 
 #price
 {
     background-color: #f3f4f5;
+    width: 100%;
 }
 
 /* =============Navigation============= */
 
 .navbar{
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     z-index: 100;
     gap: 10px;
+    position:absolute;
 }
 
 .nav-first, .nav-second, .nav-third, .nav-space
@@ -139,8 +145,9 @@ footer
 .top-info-card
 {
     display: grid;
-    grid-template-columns: 35vw 40vw;
+    grid-template-columns: 35vw 1fr;
     grid-template-rows: 0.2fr 0.5fr 1fr;
+    width: 100%;
 }
 
 .top-info-card-title
@@ -174,6 +181,11 @@ footer
     height: 40px;
 }
 
+.inner-card > p
+{
+    color: #42508b;
+}
+
 .top-info-card-image
 {
     display: flex;
@@ -202,19 +214,23 @@ footer
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: flex-start;
-    gap: 20vh;
+    gap: 10vw;
     margin-bottom: 20vh;
+}
+
+.info-card-image
+{
+    flex:1;
 }
 
 .info-card-image > img
 {
-    height: 300px;
-    flex:1;
+    width: 700px;
 }
 
 .info-card-content
 {
-    flex:0.5;
+    flex:0.8;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -225,6 +241,11 @@ footer
     margin-top: 20px;
     width: 160px;
     height: 2.4em;
+}
+
+.info-card-content > p
+{
+    color: rgb(65, 85, 150);
 }
 
 /* =============Price============= */
@@ -288,6 +309,7 @@ footer
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    padding: 10vh 20vw 5vh 20vw;
     row-gap: 2em;
 }
 
@@ -404,6 +426,10 @@ a{
 
 a:active
 {
+    color: rgb(95, 108, 170);
+}
+
+a:link {
     color: rgb(95, 108, 170);
 }
 
