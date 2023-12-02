@@ -1,33 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto&display=swap);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url(cssReset.css);
 
-.colors
-{
-    color:#f0f2fb;
-    color:#20284c;
-    color: #42508b;
-    color: rgb(95, 108, 170);
-    color:#979db4;
-    color:#c0c6db;
-    color:#7c7c93;
-    color:#b4b4c9;
-    color:#7f848c;
-    color:#d4d4e9;
-    color:#b4bcbc;
-}
-
-/* =============Clearing styles============= */
+/* =============All============= */
 
 *{
     font-family: "Roboto", "Arial";
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-html, body{
-    width: 100%;
-    height: 100%;
 }
 
 /* =============Sections============= */
@@ -91,7 +69,7 @@ footer
 .nav-title > p
 {
     font-weight: bolder;
-    font-size: 1.5em;
+    font-size: 1.75rem;
 }
 
 .nav-buy-button
@@ -104,13 +82,14 @@ footer
 {
     width: 200px;
     height: 2rem;
+    font-size: 0.92rem;
 }
 
 /* =============Introduction============= */
 .introduction-grid
 {
     display: grid;
-    grid-template-columns: 24vw;
+    grid-template-columns: 28vw;
     grid-template-rows: 0.5fr 1fr 0.5fr;
     gap:20px;
 }
@@ -130,12 +109,13 @@ footer
 {
     display: flex;
     justify-content: start;
+    align-items: flex-end;
     gap: 20px;
 }
 
 .introduction-pucharse-ui-button, .introduction-learn-more-button
 {
-    width: 160px;
+    width: 190px;
     height: 2.4em;
 }
 
@@ -233,6 +213,7 @@ footer
     flex:0.8;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     gap: 20px;
 }
 
@@ -361,8 +342,9 @@ footer
 .footer-button > button
 {
     text-align: center;
-    width: 130px;
+    width: 140px;
     height: 2.4em;
+    font-size: 0.95rem;
 }
 
 .media
@@ -400,7 +382,7 @@ footer
 h1
 {
     width: 100%;
-    font-size: 42px;
+    font-size: 3.2rem;
     font-weight: bold;
     color: #20284c;
 }
@@ -408,7 +390,7 @@ h1
 h2
 {
     width: 100%;
-    font-size: 32px;
+    font-size: 2.2rem;
     font-weight: bold;
     color: #20284c;
 }
@@ -436,4 +418,17 @@ a:link {
 a:visited
 {
     color: rgb(95, 108, 170);
+}
+
+@media(max-width:576px)
+{
+    body
+    {
+        background-color: antiquewhite;
+    }
+
+    .info-card-image > img
+    {
+        width: 300px;
+    }
 }
