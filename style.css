@@ -12,13 +12,9 @@
 
 #introduction
 {
-    padding-top: 25vh;
-    padding-left: 10vw;
+    /* padding-top: 25vh;
+    padding-left: 10vw; */
     padding-bottom: 60vh;
-    background-image: url("./Img/Img5.jpg");
-    background-position: 100% 0;
-    background-repeat: no-repeat;
-    background-size: 60%;
 }
 
 #info
@@ -37,6 +33,24 @@ footer
 {
     background-color: #f3f4f5;
     width: 100%;
+}
+
+nav
+{
+    position:static;
+}
+
+@media(max-width:576px)
+{
+    body
+    {
+        background-color: antiquewhite;
+    }
+
+    .info-card-image > img
+    {
+        width: 300px;
+    }
 }
 
 /* =============Navigation============= */
@@ -86,11 +100,14 @@ footer
 }
 
 /* =============Introduction============= */
+
 .introduction-grid
 {
     display: grid;
     grid-template-columns: 28vw;
     grid-template-rows: 0.5fr 1fr 0.5fr;
+    padding-left: 10vw;
+    padding-top: 20vh;
     gap:20px;
 }
 
@@ -119,6 +136,26 @@ footer
     height: 2.4em;
 }
 
+.introduction-image
+{
+    position:absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    right: 0;
+    top: 0;
+    text-align: center;
+    background-color: #c0c6db46;
+    padding: 10vw 0 10vw 27vw;
+    z-index: -1;
+    border-radius: 52% 48% 66% 34% / 68% 0 0% 32% ;
+}
+
+.introduction-image > img
+{
+    width: 900px;
+}
+
 /* =============Info============= */
 
 /* ===Top Info Card=== */
@@ -127,6 +164,7 @@ footer
     display: grid;
     grid-template-columns: 35vw 1fr;
     grid-template-rows: 0.2fr 0.5fr 1fr;
+    margin-bottom: 20vh;
     width: 100%;
 }
 
@@ -172,7 +210,6 @@ footer
     align-items: center;
     justify-content: end;
     grid-area: 1 / 2 / span 3 / 2;
-    margin-bottom: 20vh;
 }
 
 .top-info-card-image > img
@@ -371,7 +408,7 @@ footer
 
 .light-button
 {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0);
     color: #20284c;
     border: 2px solid #20284c;
     border-radius: 3px;
@@ -418,17 +455,4 @@ a:link {
 a:visited
 {
     color: rgb(95, 108, 170);
-}
-
-@media(max-width:576px)
-{
-    body
-    {
-        background-color: antiquewhite;
-    }
-
-    .info-card-image > img
-    {
-        width: 300px;
-    }
 }
