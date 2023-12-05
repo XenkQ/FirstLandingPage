@@ -140,13 +140,14 @@ footer
 
 .introduction-title
 {
+    width: 40em;
     display: flex;
     align-items: center;
 }
 
 .introduction-description
 {
-    width: 85%;
+    width: 33em;
     color: rgb(58, 83, 165);
 }
 
@@ -190,6 +191,11 @@ footer
     #introduction
     {
         padding-bottom: 30vh;
+    }
+
+    .introduction-title
+    {
+        width: 100%;
     }
 
     .introduction-description
