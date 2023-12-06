@@ -4,8 +4,6 @@ function toogleNavBar()
     const navMoreButtonElement = document.querySelector(".mobile-nav-more");
     const body = document.querySelector("body");
 
-    console.log(navMoreButtonElement.attributes);
-
     if(navElement.style.display === "none")
     {
         navElement.style.display = "flex";
