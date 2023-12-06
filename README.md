@@ -1,5 +1,5 @@
 # FirstLandingPage
-My first landing page made only with HTML and CSS
+My first landing page made only with HTML, CSS and JS.
 
 Images:<br/>
 <ul>
