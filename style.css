@@ -667,6 +667,12 @@ footer
     font-weight: bold;
 }
 
+/* =============Buttons============= */
+
+button{
+    cursor: pointer;
+}
+
 /* =============Headers============= */
 h1
 {
