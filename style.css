@@ -109,8 +109,25 @@
         width: 100vw;
         top:0;
         background: white;
+        animation: slideIn .5s ease-in;
     }
 
+    @keyframes slideIn
+    {
+        0%
+        {
+            transform: translate(-500px);
+        }
+    }
+
+    @keyframes slideOut
+    {
+        100%
+        {
+            transform: translate(-500px);
+        }
+    }
+    
     .nav-space
     {
         display: none;
