@@ -191,8 +191,7 @@
     display: grid;
     grid-template-columns: 50vw;
     grid-template-rows: 0.5fr 0.60fr 0.3fr;
-    padding-left: 10vw;
-    padding-top: 20vh;
+    padding: 20vh 0 0 10vw;
     gap:20px;
 }
 
@@ -303,8 +302,7 @@
 
 #info
 {
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 0 10vw;
 }
 
 /* ===Top Info Card=== */
@@ -463,9 +461,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 20vh;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding: 0 10vw 20vh 10vw;
 }
 
 .price-wave
