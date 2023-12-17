@@ -6,6 +6,7 @@
 
 *{
     font-family: "Roboto", "Arial";
+    scroll-behavior: smooth;
 }
 
 /* =============Navigation============= */
@@ -19,26 +20,20 @@
     z-index: 100;
     gap: 10px;
     position:absolute;
+    padding: 0 10vw;
 }
 
 .navbar-links
 {
     flex: 1;
     display: flex;
-    gap: 6rem;
-}
-
-.nav-first, .nav-second, .nav-third, .nav-space
-{
-    flex:.3;
-    padding: 1em;
-    color: rgb(95, 108, 170);
+    gap: 7vw;
 }
 
 .nav-title
 {
-    flex: 1;
-    padding: 1em;
+    flex: 3;
+    padding: 1em 2em;
     color: #42508b;
 }
 
@@ -116,7 +111,7 @@
     {
         0%
         {
-            transform: translate(-500px);
+            transform: translate(-100vw);
         }
     }
 
@@ -124,7 +119,7 @@
     {
         100%
         {
-            transform: translate(-500px);
+            transform: translate(-100vw);
         }
     }
     
